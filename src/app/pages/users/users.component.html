@@ -1,0 +1,16 @@
+    
+    <input type="text" name="countryname" value="" id="countryname" #emialname>
+    <button (click)="emial(emialname.value)" type="button" class="btn btn-dark"> Search Country</button>
+    <div class="spinner-grow text-dark" role="status">
+    <span class="visually-hidden" ></span>
+    </div>
+
+
+
+<div  *ngFor="let item of users">
+<label for="">  <i class="bi bi-geo-alt-fill">  <b class="fix">{{item.name}}</b> </i> </label>
+<label for="">  <small class="fix" >({{item.id}})</small></label>
+<label for="">  <small class="fix"> ({{item.username}}) </small> </label>
+<label for="">  <small class="fix"> ({{item.email}}) </small> </label>
+</div>
+
